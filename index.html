@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+ 
+<head>
+  <meta charset="utf-8" />
+  <title>A simple Web page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- styles -->
+  <link rel="stylesheet" href="http://owsgip.itc.utwente.nl/base/ExtJS/resources/css/ext-all.css"/>
+  <link rel="stylesheet" href="http://owsgip.itc.utwente.nl/base/GeoExt/resources/css/geoext-all.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <!-- ExtJS libraries -->
+  <script src="http://owsgip.itc.utwente.nl/base/ExtJS/adapter/ext/ext-base.js"></script>
+  <script src="http://owsgip.itc.utwente.nl/base/ExtJS/ext-all.js"></script>
+
+  <!-- Geo Scripts -->
+  <script src="http://owsgip.itc.utwente.nl/base/OpenLayers/OpenLayers.js"></script>
+  <script src="http://owsgip.itc.utwente.nl/base/GeoExt/lib/GeoExt.js"></script>
+
+  <!-- the control script -->
+  <script src="scripts/control.js"></script>
+</head> 
+<body>
+
+  <!-- here goes the content of the page -->
+ <header id="banner" class="bodygroup">
+    <figure><img src="images/nepal.png" width="45px" alt="ITC" /></figure>
+    <h1><a href="#">Rivers Of Nepal</a></h1><br>
+    <nav><ul>
+      <li id="home-li" class="active"><a href="#" onclick="switchDivs('home-'); return false;">home</a></li>
+      <li id="contact-li"><a href="#" onclick="switchDivs('contact-'); return false;">contact</a></li>
+    </ul></nav>
+  </header>
+  <div id="home-div">
+  <section id="first" class="bodygroup">
+    <hgroup>
+      <h2>Spatial Data Viewer</h2>
+      <h3>Using Google maps, The rivers of Nepal</h3>
+    </hgroup>
+    <!-- <article>
+      <div id="viewer-panel"></div>
+    </article> -->
+    <article class="">
+      <iframe width="760" height="500" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/search?q=rivers+of+nepal&key=AIzaSyDJcApCvxJA6dbvAwo1zFOnByVyMh8lhns" allowfullscreen></iframe>
+  </section> <!-- first -->
+
+
+
+  </div>
+  <div id="resources-div" class="hidediv">
+    <section id="third" class="bodygroup">
+      <hgroup>
+        <h2>Third Section Title</h2>
+        <h3>Subtitle</h3>
+      </hgroup>
+      <article>
+        <!-- resources content goes here -->
+      </article>
+    </section>
+  </div>  <!-- resources -->
+
+  <div id="contact-div" class="hidediv">
+    <section id="fourth" class="bodygroup">
+      <hgroup>
+        <h2>Contact Information</h2>
+      </hgroup>
+      <article>
+        Email:aryal.rebanta@gmail.com <br>
+        Phone: +9779841723105 <br>
+        Address: kalanki, Kathmandu
+      </article>
+    </section>
+  </div>  <!-- contact -->
+
+
+  <footer class="bodygroup">
+    <p>Updated on March 20th, 2020 by Rebanta Aryal;<br>ME/MS Geoinformatics Kathmandu University</p>
+  </footer>
+</body>
+ 
+</html>
